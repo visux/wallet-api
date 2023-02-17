@@ -12,9 +12,9 @@ import {
   Validator,
   Vote,
   WeightedVoteOption,
-} from '@terra-money/terra.js';
-import { Pagination, PaginationOptions } from '@terra-money/terra.js/dist/client/lcd/APIRequester';
-import { WebSocketClient } from '@terra-money/terra.js';
+} from '@terra-rebels/terra.js';
+import { Pagination, PaginationOptions } from '@terra-rebels/terra.js/dist/client/lcd/APIRequester';
+import { WebSocketClient } from '@terra-rebels/terra.js';
 import axios, { Axios } from 'axios';
 
 @Injectable()

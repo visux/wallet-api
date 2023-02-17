@@ -8,7 +8,7 @@ import { Mutex } from 'async-mutex';
 import { LCDRepository } from '../repository/lcd.repository';
 import { RPCRepository } from '../repository/rpc.repository';
 
-import { BlockInfo } from '@terra-money/terra.js';
+import { BlockInfo } from '@terra-rebels/terra.js';
 import { RewardCommission } from '../entity/reward-commission.entity';
 import { BlockTime } from '../entity/block-time.entity';
 import { filterLuna, parseDenomAmountListFromText } from './denom-amount';

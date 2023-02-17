@@ -4,7 +4,7 @@ import { LCDRepository } from '../repository/lcd.repository';
 import { ExternalRepository } from '../repository/external.repository';
 import { ValidatorExtra } from '../entity/validator-extra.entity';
 import config from '../config';
-import { Validator } from '@terra-money/terra.js';
+import { Validator } from '@terra-rebels/terra.js';
 
 @Injectable()
 export class ValidatorExtraCollector {

@@ -1,8 +1,8 @@
 import { Injectable } from '@nestjs/common';
 import { Connection, Repository } from 'typeorm';
 import { InjectRepository } from '@nestjs/typeorm';
-import { ProposalStatus } from '@terra-money/terra.proto/cosmos/gov/v1beta1/gov';
-import { ValAddress, WeightedVoteOption } from '@terra-money/terra.js';
+import { ProposalStatus } from '@terra-rebels/terra.proto/cosmos/gov/v1beta1/gov';
+import { ValAddress, WeightedVoteOption } from '@terra-rebels/terra.js';
 
 import { LCDRepository } from '../repository/lcd.repository';
 import { Proposal, ValidatorVotes } from '../entity';

@@ -1,5 +1,5 @@
 import { Index, Column, Entity, PrimaryColumn } from 'typeorm';
-import { ProposalStatus } from '@terra-money/terra.proto/cosmos/gov/v1beta1/gov';
+import { ProposalStatus } from '@terra-rebels/terra.proto/cosmos/gov/v1beta1/gov';
 
 @Entity('Proposal')
 export class Proposal {

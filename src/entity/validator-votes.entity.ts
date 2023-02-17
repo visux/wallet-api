@@ -1,5 +1,5 @@
 import { Index, Column, Entity, PrimaryGeneratedColumn, Unique } from 'typeorm';
-import { WeightedVoteOption } from '@terra-money/terra.js';
+import { WeightedVoteOption } from '@terra-rebels/terra.js';
 
 @Entity('ValidatorVotes')
 @Unique(['operatorAddress', 'proposalId'])

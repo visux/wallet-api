@@ -804,35 +804,35 @@
   resolved "https://registry.yarnpkg.com/@sqltools/formatter/-/formatter-1.2.3.tgz#1185726610acc37317ddab11c3c7f9066966bd20"
   integrity sha512-O3uyB/JbkAEMZaP3YqyHH7TMnex7tWyCbCI4EfJdOCoN6HIhqdJBWTM6aCCiWQ/5f5wxjgU735QAIpJbjDvmzg==
 
-"@terra-money/legacy.proto@npm:@terra-money/terra.proto@^0.1.7":
-  version "0.1.7"
-  resolved "https://registry.yarnpkg.com/@terra-money/terra.proto/-/terra.proto-0.1.7.tgz#59c18f30da10d43200bab3ba8feb5b17e43a365f"
-  integrity sha512-NXD7f6pQCulvo6+mv6MAPzhOkUzRjgYVuHZE/apih+lVnPG5hDBU0rRYnOGGofwvKT5/jQoOENnFn/gioWWnyQ==
+"@terra-rebels/legacy.proto@npm:@terra-rebels/terra.proto@^0.1.6":
+  version "0.1.6"
+  resolved "https://registry.yarnpkg.com/@terra-rebels/terra.proto/-/terra.proto-0.1.6.tgz#d0c75d3e64c0fdcb8766becf5f78da7d9677e8d2"
+  integrity sha512-ph6Nm64v11Sz7BgxkEh55IEGbetRpfEXYwo5BGE+fVR5A0D+oFuuF+WSzXZCIQtLRTYJ1kqs6Nd8OA5yLToucQ==
   dependencies:
+    "@improbable-eng/grpc-web" "^0.14.1"
     google-protobuf "^3.17.3"
     long "^4.0.0"
     protobufjs "~6.11.2"
 
-"@terra-money/log-finder-ruleset@^3.0.2":
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/@terra-money/log-finder-ruleset/-/log-finder-ruleset-3.0.2.tgz#f40c378c90fd33f73450186e876a36117e96235e"
-  integrity sha512-pT7LZN15UFkL/5LMyp40j8O/rg1G6MUQi9755aZdjJ4NOOhq+hp0xj/tFPW5lTtojPS4LtX4oasXs28uNfRr7g==
+"@terra-rebels/log-finder-ruleset@^0.9.1":
+  version "0.9.1"
+  resolved "https://registry.yarnpkg.com/@terra-rebels/log-finder-ruleset/-/log-finder-ruleset-0.9.1.tgz#796f1dce751f71df6c74fd6538ae143d72561207"
+  integrity sha512-09ioax/Vppc3p6EeO6xbrfvllOVSbF5OCxmv+JthuQFtX+T3N33na2KX7tgGnG3+Xa+uRh80KSL8Sx80QZmkyw==
   dependencies:
-    "@terra-money/log-finder" "^1.1.6"
+    "@terra-rebels/log-finder" "^1.0.0"
+    "@terra-rebels/terra.js" "^0.8.1"
 
-"@terra-money/log-finder@^1.1.6":
-  version "1.1.6"
-  resolved "https://registry.yarnpkg.com/@terra-money/log-finder/-/log-finder-1.1.6.tgz#501226bc92446dd2514b5d0e08cb24c795450501"
-  integrity sha512-QYmkhlCu14foyy2szZfDjQnncoXvIUHMUsrxdW7Fcq1UOM7ecmeQC35eX5JXeX3tRiPVjFaukbNoIwFYFGTJWg==
+"@terra-rebels/log-finder@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@terra-rebels/log-finder/-/log-finder-1.0.0.tgz#359e8e29f0e686cd09121ef8d521e93fdb384ad7"
+  integrity sha512-VSSkkilvKKAnYm0eigCxeInveYAUvhfkt0+T/Z5b5isqavy819XmsibVUCPVNMMd7K9kpfz/jr6LffgOOp+lmw==
 
-"@terra-money/terra.js@^3.0.12":
-  version "3.1.3"
-  resolved "https://registry.yarnpkg.com/@terra-money/terra.js/-/terra.js-3.1.3.tgz#11f78e4f72f0c9b28ad6063f527ad2de72a594f4"
-  integrity sha512-80HU5WXrqf3hZTo2GRhIycH17A+SkLD6afbu8MynMDGGD/A861F3zVv6NQ/Z7PWQGHxgddZEK/A0UQ2uK/xfHg==
+"@terra-rebels/terra.js@^0.8.1":
+  version "0.8.1"
+  resolved "https://registry.yarnpkg.com/@terra-rebels/terra.js/-/terra.js-0.8.1.tgz#d48b28874911110e0652a741d0a3ffdcb0be4ec8"
+  integrity sha512-5U4hZFZ6YsWccMT5UQQual+sfQf2zGokhA02CA0PxlWKrfwK1UqpL6D7vebGeTMoB9TeVr4j5Brvy/9ssMCMfg==
   dependencies:
-    "@terra-money/legacy.proto" "npm:@terra-money/terra.proto@^0.1.7"
-    "@terra-money/terra.proto" "~2.0.0"
-    axios "^0.26.1"
+    axios "^0.21.1"
     bech32 "^2.0.0"
     bip32 "^2.0.6"
     bip39 "^3.0.3"
@@ -843,12 +843,32 @@
     secp256k1 "^4.0.2"
     tmp "^0.2.1"
     utf-8-validate "^5.0.5"
-    ws "^7.5.5"
+    ws "^7.4.2"
 
-"@terra-money/terra.proto@~2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@terra-money/terra.proto/-/terra.proto-2.0.0.tgz#5f861d782208b64bba71ddb88f617168bfddd61f"
-  integrity sha512-ZjyFOFUzrGn8IwzGIgr1OJFcPSsQoz/XAfoSKThJx+OjJA7CLhdcz51+5h7ehNfb+qB9wr7aNME0h24wu9D4SQ==
+"@terra-rebels/terra.js@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@terra-rebels/terra.js/-/terra.js-1.0.0.tgz#42420790b3fd28ca23282d01af87fe3272377ea7"
+  integrity sha512-eWTKsb271n/xFRBLMFXG8S6kleDGwDacaG9J77Eu25CFyWyQTvIMA7tY9w1v4KWW9O7Rvd4Yd2Lo4VyyZ+EHDA==
+  dependencies:
+    "@terra-rebels/legacy.proto" "npm:@terra-rebels/terra.proto@^0.1.6"
+    "@terra-rebels/terra.proto" "^1.0.0"
+    axios "^0.27.2"
+    bech32 "^2.0.0"
+    bip32 "^2.0.6"
+    bip39 "^3.0.3"
+    bufferutil "^4.0.3"
+    decimal.js "^10.2.1"
+    jscrypto "^1.0.1"
+    readable-stream "^3.6.0"
+    secp256k1 "^4.0.2"
+    tmp "^0.2.1"
+    utf-8-validate "^5.0.5"
+    ws "^7.5.9"
+
+"@terra-rebels/terra.proto@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@terra-rebels/terra.proto/-/terra.proto-1.0.0.tgz#d5409ef52ebfd49ffb44fb45be905397a46e810c"
+  integrity sha512-e6lm3QBj/qyE5fX3X76YzqTurShNecxbzu/xbOPG9q6tXYZH5D0MsaRulZW6enYPfbzlJYSwBYv7oWrmB3ZGxw==
   dependencies:
     "@improbable-eng/grpc-web" "^0.14.1"
     google-protobuf "^3.17.3"
@@ -1027,7 +1047,7 @@
   resolved "https://registry.yarnpkg.com/@types/mime/-/mime-1.3.2.tgz#93e25bf9ee75fe0fd80b594bc4feb0e862111b5a"
   integrity sha512-YATxVxgRqNH6nHEIsvg6k2Boc1JHI9ZbH5iWFFv/MTkchz3b1ieGDa5T0a9RznNdI0KhVbdbWSN+KWWrQZRxTw==
 
-"@types/node@*", "@types/node@>=13.7.0":
+"@types/node@*":
   version "17.0.43"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.43.tgz#7f16898cdd791c9d64069000ad448b47b3ca8353"
   integrity sha512-jnUpgw8fL9kP2iszfIDyBQtw5Mf4/XSqy0Loc1J9pI14ejL83XcCEvSf50Gs/4ET0I9VCCDoOfufQysj0S66xA==
@@ -1041,6 +1061,11 @@
   version "11.11.6"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-11.11.6.tgz#df929d1bb2eee5afdda598a41930fe50b43eaa6a"
   integrity sha512-Exw4yUWMBXM3X+8oqzJNRqZSwUAaS4+7NdvHqQuFi/d+synz++xmX3QIf+BFqneW8N31R8Ky+sikfZUXq07ggQ==
+
+"@types/node@>=13.7.0":
+  version "18.13.0"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.13.0.tgz#0400d1e6ce87e9d3032c19eb6c58205b0d3f7850"
+  integrity sha512-gC3TazRzGoOnoKAhUx+Q0t8S9Tzs74z7m0ipwGpSqQrleP14hKxP4/JUeEQcD3W1/aIpnWl8pHowI7WokuZpXg==
 
 "@types/node@^16.11.1":
   version "16.11.40"
@@ -1534,12 +1559,12 @@ axios@0.27.2, axios@^0.27.2:
     follow-redirects "^1.14.9"
     form-data "^4.0.0"
 
-axios@^0.26.1:
-  version "0.26.1"
-  resolved "https://registry.yarnpkg.com/axios/-/axios-0.26.1.tgz#1ede41c51fcf51bbbd6fd43669caaa4f0495aaa9"
-  integrity sha512-fPwcX4EvnSHuInCMItEhAGnaSEXRBjtzh9fOtsE6E1G6p7vl7edEeZe11QHf18+6+9gR5PbKV/sGKNaD8YaMeA==
+axios@^0.21.1:
+  version "0.21.4"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.21.4.tgz#c67b90dc0568e5c1cf2b0b858c43ba28e2eda575"
+  integrity sha512-ut5vewkiu8jjGBdqpM44XxjuCjq9LAKeHVmoVfHVzy8eHgxxq8SbAVQNovDA8mVi05kP0Ea/n/UzcSHcTJQfNg==
   dependencies:
-    follow-redirects "^1.14.8"
+    follow-redirects "^1.14.0"
 
 babel-jest@^27.5.1:
   version "27.5.1"
@@ -2725,7 +2750,12 @@ flatted@^3.1.0:
   resolved "https://registry.yarnpkg.com/flatted/-/flatted-3.2.5.tgz#76c8584f4fc843db64702a6bd04ab7a8bd666da3"
   integrity sha512-WIWGi2L3DyTUvUrwRKgGi9TwxQMUEqPOPQBVi71R96jZXJdFskXEmf54BoZaS1kknGODoIGASGEzBUYdyMCBJg==
 
-follow-redirects@^1.14.8, follow-redirects@^1.14.9:
+follow-redirects@^1.14.0:
+  version "1.15.2"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.15.2.tgz#b460864144ba63f2681096f274c4e57026da2c13"
+  integrity sha512-VQLG33o04KaQ8uYi2tVNbdrWp1QWxNNea+nmIB4EVM28v0hmP17z7aG1+wAkNzVq4KeXTq3221ye5qTJP91JwA==
+
+follow-redirects@^1.14.9:
   version "1.15.1"
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.15.1.tgz#0ca6a452306c9b276e4d3127483e29575e207ad5"
   integrity sha512-yLAMQs+k0b2m7cVxpS1VKJVvoz7SS9Td1zss3XRwXj+ZDH00RJgnuLx7E44wx02kQLrdM3aOOy+FpzS7+8OizA==
@@ -2904,9 +2934,9 @@ globby@^11.0.3:
     slash "^3.0.0"
 
 google-protobuf@^3.17.3:
-  version "3.20.1"
-  resolved "https://registry.yarnpkg.com/google-protobuf/-/google-protobuf-3.20.1.tgz#1b255c2b59bcda7c399df46c65206aa3c7a0ce8b"
-  integrity sha512-XMf1+O32FjYIV3CYu6Tuh5PNbfNEU5Xu22X+Xkdb/DUexFlCzhvv7d5Iirm4AOwn8lv4al1YvIhzGrg2j9Zfzw==
+  version "3.21.2"
+  resolved "https://registry.yarnpkg.com/google-protobuf/-/google-protobuf-3.21.2.tgz#4580a2bea8bbb291ee579d1fefb14d6fa3070ea4"
+  integrity sha512-3MSOYFO5U9mPGikIYCzK0SaThypfGgS6bHqrUGXG3DPHCrb+txNqeEcns1W0lkGfk0rCyNXm7xB9rMxnCiZOoA==
 
 graceful-fs@^4.1.2, graceful-fs@^4.1.6, graceful-fs@^4.2.0, graceful-fs@^4.2.4, graceful-fs@^4.2.9:
   version "4.2.10"
@@ -5595,7 +5625,12 @@ write-file-atomic@^3.0.0:
     signal-exit "^3.0.2"
     typedarray-to-buffer "^3.1.5"
 
-ws@^7.4.6, ws@^7.5.5:
+ws@^7.4.2, ws@^7.5.9:
+  version "7.5.9"
+  resolved "https://registry.yarnpkg.com/ws/-/ws-7.5.9.tgz#54fa7db29f4c7cec68b1ddd3a89de099942bb591"
+  integrity sha512-F+P9Jil7UiSKSkppIiD94dN07AwvFixvLIj1Og1Rl9GGMuNipJnV9JzjD6XuqmAeiswGvUmNLjr5cFuXwNS77Q==
+
+ws@^7.4.6:
   version "7.5.8"
   resolved "https://registry.yarnpkg.com/ws/-/ws-7.5.8.tgz#ac2729881ab9e7cbaf8787fe3469a48c5c7f636a"
   integrity sha512-ri1Id1WinAX5Jqn9HejiGb8crfRio0Qgu8+MtL36rlTA6RLsMdWt1Az/19A2Qij6uSHUMphEFaTKa4WG+UNHNw==

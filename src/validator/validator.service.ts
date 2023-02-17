@@ -1,6 +1,6 @@
 import { forwardRef, Inject, Injectable } from '@nestjs/common';
 import { InjectConnection, InjectRepository } from '@nestjs/typeorm';
-import { BlockInfo, Proposal, Validator } from '@terra-money/terra.js';
+import { BlockInfo, Proposal, Validator } from '@terra-rebels/terra.js';
 import axios from 'axios';
 import BigNumber from 'bignumber.js';
 import config from 'src/config';

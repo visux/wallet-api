@@ -1,5 +1,5 @@
-import { ProposalStatus } from '@terra-money/terra.proto/cosmos/gov/v1beta1/gov';
-import { WeightedVoteOption, ValAddress } from '@terra-money/terra.js';
+import { ProposalStatus } from '@terra-rebels/terra.proto/cosmos/gov/v1beta1/gov';
+import { WeightedVoteOption, ValAddress } from '@terra-rebels/terra.js';
 
 export type ProposalStatusMap = Map<number, ProposalStatus>;
 

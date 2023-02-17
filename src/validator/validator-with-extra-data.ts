@@ -1,4 +1,4 @@
-import { Validator } from '@terra-money/terra.js';
+import { Validator } from '@terra-rebels/terra.js';
 
 export type Contact = { email: string } & Record<string, string>;
 
