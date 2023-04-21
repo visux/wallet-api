@@ -1,5 +1,5 @@
 ## declare base image - node 16
-FROM node:16.13.1-alpine3.12 AS builder
+FROM node:16.20-alpine3.17 AS builder
 RUN apk add --no-cache python3 make g++
 ## make work directory and copy files 
 WORKDIR /app 
@@ -12,7 +12,7 @@ RUN yarn
 COPY . . 
 RUN yarn run build
 
-FROM node:16.13.1-alpine3.12
+FROM node:16.20-alpine3.17
 WORKDIR /usr/src/app 
 COPY --from=builder /app ./ 
 EXPOSE 3000 
