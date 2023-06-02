@@ -70,7 +70,7 @@ export class RewardCollector {
         }
 
         console.log('processing block #', block.block.header.height);
-        console.time('time elapsed for #' + block.block.header.height);
+        // console.time('time elapsed for #' + block.block.header.height);
 
         const [delegationAmountMap, blockResults] = await Promise.all([
           this.lcdRepo.fetchValidatorTokenMap(height),
@@ -112,7 +112,7 @@ export class RewardCollector {
           }
 
           await manager.save(this.blockRepo.create({ height, time: block.block.header.time }));
-          console.timeEnd('time elapsed for #' + block.block.header.height);
+          // console.timeEnd('time elapsed for #' + block.block.header.height);
         });
 
         const interval = 1000;

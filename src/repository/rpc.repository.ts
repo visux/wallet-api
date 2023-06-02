@@ -1,7 +1,8 @@
 import config from '../config';
 
 import { Injectable } from '@nestjs/common';
-import axios, { Axios } from 'axios';
+import axios, { AxiosInstance } from 'axios';
+import axiosRetry from "axios-retry";
 
 class RawRewardItem {
   rewards: string[];
@@ -17,12 +18,14 @@ class RawRewardItem {
 export class RPCRepository {
   private rpcURL = config.endpoints.rpcCollectorList;
 
-  private http: Axios;
+  private http: AxiosInstance;
 
   constructor() {
     this.http = axios.create({
       baseURL: this.rpcURL[0],
     });
+
+    axiosRetry(this.http, { retries: 5 });
   }
 
   blockResult(height: number) {

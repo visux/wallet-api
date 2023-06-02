@@ -15,7 +15,8 @@ import {
 } from '@terra-rebels/terra.js';
 import { Pagination, PaginationOptions } from '@terra-rebels/terra.js/dist/client/lcd/APIRequester';
 import { WebSocketClient } from '@terra-rebels/terra.js';
-import axios, { Axios } from 'axios';
+import axios, { AxiosInstance } from 'axios';
+import axiosRetry from 'axios-retry';
 
 @Injectable()
 export class LCDRepository {
@@ -24,7 +25,7 @@ export class LCDRepository {
 
   lcd: LCDClient;
 
-  private http: Axios;
+  private http: AxiosInstance;
 
   private wsConnIndex = 0;
   private mantleIndex = 0;
@@ -39,6 +40,8 @@ export class LCDRepository {
     this.http = axios.create({
       baseURL: this.lcdURL[0],
     });
+
+    axiosRetry(this.http, { retries: 5 });
 
     this.connectWebSocket(0, this.onBlock.bind(this));
   }
